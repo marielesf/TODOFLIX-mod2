@@ -1,17 +1,42 @@
 import React from "react";
-import Header from "./Pages/Header";
-import Home from "./Pages/Home";
-import Carroussel from "./Pages/Carroussel";
-import capitao2 from "./images/capitao2.png";
-import cherek from "./images/cherek.png";
-import voltar from "./images/volta.png";
-import aranha from "./images/omiAranha.png";
-import sonho from "./images/sonho.png";
-import sozinho from "./images/sozinho.png";
-import fuga from "./images/fuga.jpeg";
-import rocketman from "./images/rocketman.jpg";
-import amarelo from "./images/amarelo.jpg";
+import Carousel from "nuka-carousel";
+import cherek from "../images/cherek.png";
+import voltar from "../images/volta.png";
+import aranha from "../images/omiAranha.png";
+import sonho from "../images/sonho.png";
+import sozinho from "../images/sozinho.png";
+import fuga from "../images/fuga.jpeg";
+import rocketman from "../images/rocketman.jpg";
+import amarelo from "../images/amarelo.jpg";
+import styled from "styled-components";
+import thumbUp from "../images/thumbsUp-Filled.svg";
 
+const Container = styled.div`
+  padding: 0 3% 0 3%;
+  background-color: black;
+`;
+
+const Img = styled.img`
+  width: 350px;
+  height: 200px;
+`;
+
+const Card = styled.div`
+  color: white;
+  width: 100%;
+`;
+
+const Left = styled.div`
+  align: left;
+  display: flex;
+  width: 50%;
+`;
+
+const Right = styled.div`
+  align: right;
+  display: flex;
+  width: 50%;
+`;
 export default class App extends React.Component {
   state = {
     dropdownState: false,
@@ -83,9 +108,28 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Header />
-        <Home />
-        <Carroussel />
+        <Container>
+          <Card>
+            <h4>Destaques</h4>
+          </Card>
+          <Carousel wrapAround={true} slidesToShow={5}>
+            {this.state.movies.map((item) => (
+              <>
+                <Img src={item.img} />
+                <Card>
+                  <Left>{item.title}</Left>
+                  <Right>
+                    4/5{" "}
+                    <a href="#">
+                      <img src={thumbUp} alt="Icone Seta para cima" />
+                    </a>
+                  </Right>
+                  <p>{item.description}</p>
+                </Card>
+              </>
+            ))}
+          </Carousel>
+        </Container>
       </>
     );
   }

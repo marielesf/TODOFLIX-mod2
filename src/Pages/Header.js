@@ -38,12 +38,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   input{
+    color: white;
     width:60%;
     border-radius: 10px;
     margin-left: 15px;
     margin-right: 15px;
     background-color: grey;
-    background-image: url('../images/Icon - Search - Filled.svg');
+    background-image: url('../images/iconSearch.svg');
     background-repeat: no-repeat;
   }
 `;
