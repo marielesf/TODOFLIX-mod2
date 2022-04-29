@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Movies from "./Movies";
 import Home from "./Home";
 import Modal from "./Modal";
-import Shows from "./Shows";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import Group32 from "../images/Group 32.svg";
@@ -240,20 +239,6 @@ export default class Header extends React.Component {
             <Route path="/movies" element={<Movies />} />
           </Routes>
         </Router>
-
-        {/* <button onClick={this.handleList}>
-            {this.state.stateList === false ? "Open" : "Close"}
-          </button>
-          {this.state.stateList && (
-            <ul>
-              <p>AAAA</p>
-              <p>BBBB</p>
-              <p>CCCC</p>
-              <p>DDDD</p>
-            </ul>
-          )} */}
-
-        {/* <Link to="/movies">Movies</Link> */}
       </>
     );
   }
