@@ -112,11 +112,11 @@ export default class App extends React.Component {
           <Card>
             <h4>Destaques</h4>
           </Card>
-          <Carousel wrapAround={true} slidesToShow={5}>
+          <Carousel wrapAround={true} slidesToShow={5} adaptiveHeight={true}>
             {this.state.movies.map((item) => (
               <>
-                <Img src={item.img} />
                 <Card>
+                  <Img src={item.img} />
                   <Left>{item.title}</Left>
                   <Right>
                     4/5{" "}

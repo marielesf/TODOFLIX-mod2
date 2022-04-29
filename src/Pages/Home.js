@@ -4,6 +4,7 @@ import styled from "styled-components";
 import capitao2 from "../images/capitao2.png";
 import coracao from "../images/coracao.svg";
 import thumbUp from "../images/thumbsUp-Filled.svg";
+import Carroussel from "./Carroussel";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -26,7 +27,6 @@ const LastView = styled.div`
 const Banner = styled.div`
   padding-top: 100px;
   color: white;
-  width: 100%;
   display: flex;
   padding: 3% 3% 3% 3%;
 `;
@@ -56,6 +56,7 @@ class Home extends React.Component {
             </a>
           </LastView>
         </Banner>
+        <Carroussel />
       </>
     );
   }

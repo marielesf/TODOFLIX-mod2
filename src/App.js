@@ -84,8 +84,6 @@ export default class App extends React.Component {
     return (
       <>
         <Header />
-        <Home />
-        <Carroussel />
       </>
     );
   }
