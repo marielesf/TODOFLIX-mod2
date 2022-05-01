@@ -42,13 +42,14 @@ const GlobalStyle = createGlobalStyle`
   a:hover {
     color: grey;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
   }
 
   button:hover {
-    color: grey;
+    color: black;
+    border: 1px solid black;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
   }
 
   input{
@@ -148,12 +149,11 @@ export default class Header extends React.Component {
     return (
       <>
         <GlobalStyle />
-
         <Router>
           <Container>
             <nav>
               <Logo>
-                <h1>TODOFLIX</h1>
+                <h1>TODOFLIX</h1>{" "}
               </Logo>
               <Link to="/">
                 <LinkNav>

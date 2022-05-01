@@ -30,15 +30,13 @@ const Card = styled.div`
 
 const Left = styled.div`
   align: left;
-  width: 70%;
-  border: 1px solid red;
+  width: 80%;
   display: inline-flex;
 `;
 
 const Right = styled.div`
   align: right;
   width: 20%;
-  border: 1px solid green;
   display: inline-flex;
 `;
 export default class App extends React.Component {
