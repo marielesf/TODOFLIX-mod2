@@ -1,14 +1,6 @@
 import React from "react";
 import Carousel from "nuka-carousel";
 import { MoviesService } from "./MoviesService";
-import cherek from "../images/cherek.png";
-import voltar from "../images/volta.png";
-import aranha from "../images/omiAranha.png";
-import sonho from "../images/sonho.png";
-import sozinho from "../images/sozinho.png";
-import fuga from "../images/fuga.jpeg";
-import rocketman from "../images/rocketman.jpg";
-import amarelo from "../images/amarelo.jpg";
 import styled from "styled-components";
 import thumbUp from "../images/thumbsUp-Filled.svg";
 
