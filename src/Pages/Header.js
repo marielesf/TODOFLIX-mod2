@@ -38,8 +38,18 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     display: inline-block;
   }
-}
 
+  a:hover {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none
+  }
+
+  button:hover {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none
+  }
 
   input{
     color: white;
@@ -150,7 +160,7 @@ export default class Header extends React.Component {
                   <strong>Inicio </strong>
                 </LinkNav>
               </Link>
-              <Link to="/home" onMouseOver={this.handleList}>
+              <Link to="/movies" onMouseOver={this.handleList}>
                 <LinkNav>
                   <strong>Categorias </strong>
                   <img src={Group3} alt="icon arrow" />

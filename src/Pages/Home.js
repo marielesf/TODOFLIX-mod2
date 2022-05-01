@@ -20,7 +20,7 @@ p{
 `;
 
 const LastView = styled.div`
-  width: 25%;
+  width: 35%;
   padding-left: 3vh;
 `;
 
@@ -36,7 +36,6 @@ class Home extends React.Component {
     return (
       <>
         <GlobalStyle />
-
         <Banner>
           <img src={capitao2} alt="Imagem capitao" />
 

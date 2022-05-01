@@ -13,7 +13,7 @@ export default class Modal extends React.Component {
   render() {
     return (
       <Container>
-        <div></div>
+        <div>MODAL AQUI</div>
       </Container>
     );
   }
