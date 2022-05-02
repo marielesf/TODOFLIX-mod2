@@ -54,6 +54,13 @@ export default class App extends React.Component {
             slidesToShow={5}
             adaptiveHeight={true}
             autoplay={true}
+            defaultControlsConfig={{
+              nextButtonText: ">",
+              prevButtonText: "<",
+              pagingDotsStyle: {
+                fill: "none",
+              },
+            }}
           >
             {this.state.movies.map((item) => (
               <>
