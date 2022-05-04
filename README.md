@@ -14,6 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### Projeto disponivel online
+NETLIFY: https://todosilvaflix.netlify.app/
+
 ###  Funcionalidades principais:  
 *Layout completo  
 *Menu "Categorias" - adicionar :hover no menu "Categorias" mostrando a Rota "TODOS" funcionando e renderizando todos os filmes adicionados  
@@ -27,6 +30,3 @@ You may also see any lint errors in the console.
   ![image](https://user-images.githubusercontent.com/17839848/166161690-be358a2b-a895-412e-bdff-f1f019b8f3b3.png)
 
 
-
-### Projeto disponivel online
-NETLIFY: https://todosilvaflix.netlify.app/
