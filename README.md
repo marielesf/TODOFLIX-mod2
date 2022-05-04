@@ -26,3 +26,7 @@ You may also see any lint errors in the console.
   
   ![image](https://user-images.githubusercontent.com/17839848/166161690-be358a2b-a895-412e-bdff-f1f019b8f3b3.png)
 
+
+
+### Projeto disponivel online
+NETLIFY: https://todosilvaflix.netlify.app/
